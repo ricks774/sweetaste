@@ -1,0 +1,24 @@
+.navBarArea {
+  padding: 3% 0;
+}
+.navBarArea_m {
+  height: 84px;
+}
+
+.introArea {
+  margin-top: 13%;
+}
+.introBg {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.introInfoBox {
+  display: flex;
+  position: relative;
+  z-index: 10;
+}

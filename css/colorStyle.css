@@ -1,0 +1,27 @@
+.testBg {
+  background-color: palevioletred;
+}
+
+.Green-400 {
+  background-color: #3f5d45;
+}
+.Green-300 {
+  background-color: #8da291;
+}
+.Green-200 {
+  background-color: #eaf0ed;
+}
+
+.Yellow-400 {
+  background-color: #ffe180;
+}
+
+.fc-green-400 {
+  color: #3f5d45;
+}
+.fc-green-300 {
+  color: #8da291;
+}
+.fc-green-200 {
+  color: #eaf0ed;
+}
