@@ -4,6 +4,10 @@
 .navBarArea_m {
   height: 84px;
 }
+.navBarBtnArea {
+  display: flex;
+  align-items: center;
+}
 
 .introArea {
   margin-top: 13%;

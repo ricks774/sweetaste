@@ -4,6 +4,7 @@ a {
 }
 ul {
   padding: 0;
+  margin: 0;
 }
 li {
   list-style: none;
@@ -11,13 +12,21 @@ li {
 img {
   max-width: 100%;
 }
+.no-style {
+  border: initial;
+  padding: initial;
+  background-color: initial;
+  color: initial;
+  font-family: initial;
+  font-size: initial;
+}
 
 .m_show {
   display: none !important;
 }
 @media (max-width: 991px) {
   .m_hide {
-    display: none;
+    display: none !important;
   }
   .m_show {
     display: flex !important;
@@ -202,6 +211,7 @@ img {
   display: block;
   text-align: center;
   padding: 5% 0;
+  transition: background-color 0.5s ease;
 }
 .productBtn:hover {
   background-color: #3f5d45;
@@ -322,3 +332,425 @@ img {
 /* - 產品元件 */
 
 /* * 產品頁面 */
+
+/* * 登入頁面 */
+/* - 登入元件 */
+.loginArea {
+  transition: background-color 0.3s ease;
+}
+.loginArea:hover,
+.socialArea:hover {
+  background-color: #3f5d45;
+}
+.loginArea:hover .login-title,
+.loginArea:hover .form-check-label {
+  color: #eaf0ed;
+}
+.loginArea:hover .login-input,
+.loginArea:hover .login-inputBox {
+  background-color: #eaf0ed;
+}
+.loginArea:hover .loginBtn {
+  background-color: #ffe180;
+  color: #3f5d45;
+}
+.loginArea:hover .login-title,
+.socialArea:hover .socialTitle {
+  margin: 60px;
+  transition: margin 0.2s linear;
+}
+
+.login-title {
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  transition: margin 0.2s linear;
+}
+.login-inputArea {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+.login-input {
+  width: 100%;
+  border: none;
+}
+
+.inputEnter {
+  height: 56px;
+  font-size: 16px;
+  width: 100%;
+}
+.inputEnter::placeholder {
+  background-color: #eaf0ed;
+  color: #8da291;
+  padding: 17px 20px;
+}
+.inputEnter:focus {
+  border-color: #3f5d45;
+  box-shadow: 0 0 5px rgba(63, 93, 69, 0.8);
+}
+
+.login-checkBox {
+  padding: 0;
+}
+.login-checkBoxBtn {
+  margin-right: 8px;
+}
+.loginBtn {
+  width: 100%;
+  border: none;
+  padding: 16px 0;
+}
+.login-inputBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.login-inputIcon {
+  height: 24px;
+  width: 24px;
+  margin: 16px 20px;
+}
+/* - 登入元件 */
+
+/* - 社群元件 */
+.socialArea {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3%;
+  transition: background-color 0.3s ease;
+}
+.socialTitle {
+  font-weight: 300;
+  margin: 40px;
+  transition: margin 0.3s ease;
+}
+.socialBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 330px;
+  margin-bottom: 0;
+}
+.socialImgBtn {
+  height: 56px;
+  padding: 17px 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+.socialImgBtn:hover {
+  background-color: #ffe180;
+}
+
+@media (max-width: 991px) {
+  .socialBox {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3px;
+  }
+  .socialImgBtn {
+    padding: 20px 8px;
+  }
+  .loginArea_m {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* justify-content: center; */
+  }
+  .login-title_m {
+    margin: 30px 0;
+  }
+  .socialBox_m {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    margin: 30px 0;
+  }
+  .socialImgBox_m {
+    height: 56px;
+    background-color: #ffffff;
+  }
+  .socialImg_m {
+    height: 100%;
+    padding: 20px;
+  }
+  .loginBox_m {
+    padding: 30px;
+  }
+  .login-input {
+    background-color: #eaf0ed;
+  }
+}
+/* - 社群元件 */
+/* * 登入頁面 */
+
+/* * 購物車頁面 */
+.cartTitle {
+  padding: 16px 0;
+  border-bottom: 1px solid #eaf0ed;
+  margin-bottom: 12px;
+}
+.cartOrder {
+  padding: 0 20px;
+}
+.cartOrderLine {
+  display: flex;
+  justify-content: space-between;
+  margin: 4px 0;
+}
+.cartOrderTotal {
+  margin-top: 12px;
+  padding-bottom: 16px;
+  margin-bottom: 0;
+}
+.yellowBtn {
+  padding: 16px 0;
+  transition: background-color 0.3s ease;
+}
+.yellowBtn:hover {
+  background-color: #ffd54d;
+}
+.cartDetailArea {
+  margin-top: 33px;
+}
+.cartDetailBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  /* border-bottom: 1px solid #eaf0ed; */
+}
+.cartDetailLine {
+  height: 1px;
+}
+.cartDetailImg {
+  object-fit: cover;
+  height: 110px;
+  width: 110px;
+}
+.cartDetailText {
+  text-align: start;
+}
+.cartDetailNumBox {
+  display: flex;
+}
+.cartDetailNum {
+  border: 1px solid #eaf0ed;
+  padding: 13px 19px;
+}
+.cartDetailNumBtn {
+  transition: background-color 0.3s ease;
+}
+.cartDetailNumBtn:hover {
+  background-color: #3f5d45;
+  color: #eaf0ed;
+}
+
+.cartDetailIcon {
+  background-image: url("../images/trash-solid.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  height: 16px;
+  width: 16px;
+  transition: transform 0.3s ease;
+}
+.cartDetailIcon:hover {
+  transform: scale(1.2);
+}
+.cartDetailBox_m {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+@media (max-width: 991px) {
+  .cartDetailBox {
+    justify-content: start;
+    padding: 0 30px;
+    padding-bottom: 8.5px;
+  }
+  .cartDetailImg {
+    width: 157px;
+    height: 106px;
+  }
+  .cartDetailText {
+    margin-bottom: 8px;
+  }
+  .cartDetailPrice {
+    justify-content: end;
+    padding: 16px 30px;
+  }
+
+  .cartOrder {
+    margin-top: 30px;
+  }
+
+  .cartOrder {
+    background-color: #ffffff;
+    padding: 0 30px;
+  }
+  .cartTitle {
+    background-color: #eaf0ed;
+  }
+  .cartTitle h3 {
+    display: inline;
+    color: #3f5d45;
+    padding: 16px 0;
+  }
+  .cartOrderLine {
+    color: #3f5d45;
+  }
+}
+/* * 購物車頁面 */
+
+/* * 訂單頁面 */
+
+/* - 訂單元件 */
+.addressArea {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orderBar {
+  height: 40%;
+  width: 40%;
+}
+
+.orderInputArea {
+  display: flex;
+  gap: 8px;
+}
+
+.orderInputArea-mix {
+  text-align: left;
+}
+
+.orderInputBox {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.orderInputBox-l {
+  width: 100%;
+}
+.orderInputBoxSpan {
+  display: inline;
+  margin-bottom: 8px;
+}
+.orderInputBoxSpan-l {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.orderSelect {
+  height: 56px;
+  padding: 17px 20px;
+  width: 100%;
+}
+
+.orderAbs {
+  border: 1px solid #eaf0ed;
+}
+.orderAbsDetail {
+  padding: 0 20px;
+}
+.orderAbsList {
+  display: flex;
+  margin-bottom: 16px;
+}
+.orderAbsListImg {
+  height: 80px;
+  width: 120px;
+  object-fit: cover;
+}
+.orderAbsListTextBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  text-align: left;
+}
+.orderInputArea-100 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* - 訂單元件 */
+
+/* * 訂單頁面 */
+
+/* * 發票頁面 */
+
+/* - 發票元件 */
+
+.nav-link:hover {
+  background-color: initial;
+  color: #eaf0ed;
+}
+
+.receiptArea {
+  border: 1px solid #8da291;
+}
+
+.nav-link.active {
+  background-color: #eaf0ed !important;
+  color: #3f5d45 !important;
+  font-weight: 600 !important;
+  border-radius: 0;
+
+  /* - 發票元件 */
+}
+/* * 發票頁面 */
+
+/* * 完成頁面 */
+.success_banner {
+  background-image: url("../images/payment_success.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 496px;
+  max-width: 940px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.successBox {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.successImg {
+  max-width: 190px;
+  margin-bottom: 30px;
+}
+.successBtn {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+.successBtn_m {
+  margin-top: 0;
+}
+
+@media (max-width: 991px) {
+  .success_banner {
+    margin-bottom: 0;
+  }
+  .successBtn_m {
+    margin-top: 0;
+    display: block !important;
+  }
+}
+/* * 完成頁面 */
