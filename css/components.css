@@ -40,6 +40,14 @@ img {
 .navBtn {
   font-weight: 600;
 }
+.navBtnText {
+  padding: 10px 10px;
+  transition: transform 0.3s ease;
+}
+.navBtnText:hover {
+  border-bottom: 3px solid #3f5d45;
+}
+
 /* - 頂端導覽列 */
 
 /* - banner元件 */
@@ -58,7 +66,7 @@ img {
 
 .home_bannerBtn {
   height: 256px;
-  padding: 0 1px !important;
+  /* padding: 0 1px !important; */
 }
 
 .home_bannerBtnText {
@@ -115,7 +123,7 @@ img {
     position: relative;
   }
   .home_bannerBtnArea_m {
-    width: 100%;
+    max-width: 100%;
   }
   .home_bannerBtn {
     width: 33.33%;
@@ -696,6 +704,8 @@ img {
 .nav-link:hover {
   background-color: initial;
   color: #eaf0ed;
+  border-radius: 0;
+  border: none;
 }
 
 .receiptArea {
@@ -725,7 +735,7 @@ img {
   margin-bottom: 60px;
 }
 .successBox {
-  max-width: 40%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content: center;
