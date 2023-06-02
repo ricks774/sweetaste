@@ -42,20 +42,56 @@
             </div>
           </nav>
           <nav class="nav justify-content-between align-items-center navBarArea_m m_show">
-            <img src="../images/dehaze-24px.png" alt="dehaze" />
-            <img src="../images/logotype-sm-dark.svg" alt="logotype" class="navBarLogo_m" />
-            <img src="../images/shopping_cart.png" alt="shopping_cart" />
+            <div class="dropdown">
+              <button
+                class="no-style"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03"
+                aria-expanded="false"
+                style="padding: 26px 0"
+              >
+                <img src="../images/dehaze-24px.png" alt="dehaze" />
+              </button>
+            </div>
+            <a href="../index.html">
+              <img src="../images/logotype-sm-dark.svg" alt="logotype" class="navBarLogo_m" />
+            </a>
+            <a href="../pages/cart.html">
+              <img src="../images/shopping_cart.png" alt="shopping_cart" />
+            </a>
           </nav>
         </div>
       </div>
     </header>
+    <nav class="navbar p-0">
+      <div class="container-fluid p-0">
+        <div class="collapse navbar-collapse p-0" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto Green-400 text-center">
+            <li class="nav-item">
+              <a class="nav-link fc-green-200 fz-16 py-3" href="../index.html">首頁</a>
+            </li>
+            <div class="barLine"></div>
+            <li class="nav-item">
+              <a class="nav-link fc-green-200 fz-16 py-3" href="../pages/products.html">甜點</a>
+            </li>
+            <div class="barLine"></div>
+            <li class="nav-item">
+              <a class="nav-link fc-green-200 fz-16 py-3" href="../pages/login.html">登入</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- 購物車區塊 -->
     <main>
       <div class="container">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9">
-            <div class="row text-center mt-5 mb-lg-5">
+            <div class="row text-center mt-1 mt-lg-5 mb-lg-5">
               <div class="col-lg-8 px-lg-3 pe-lg-4 p-0">
                 <div class="Green-200 cartTitle">
                   <h2 class="fz-24 fc-green-400 fw-600">您的購物車</h2>
@@ -268,4 +304,9 @@
     </footer>
     <!-- 底部區塊 -->
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
 </html>

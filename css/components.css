@@ -362,9 +362,12 @@ img {
   background-color: #ffe180;
   color: #3f5d45;
 }
-.loginArea:hover .login-title,
+.loginArea:hover .login-title {
+  margin: 26px;
+  transition: margin 0.2s linear;
+}
 .socialArea:hover .socialTitle {
-  margin: 60px;
+  margin: 50px;
   transition: margin 0.2s linear;
 }
 
@@ -764,3 +767,27 @@ img {
   }
 }
 /* * 完成頁面 */
+
+.dropdown-menu_m {
+  background-color: #3f5d45;
+  text-align: center;
+  border-radius: 0;
+  padding: 0;
+}
+.dropdown-item {
+  padding: 16px;
+}
+.barLine {
+  width: 100%;
+  height: 1px;
+  background-color: #eaf0ed;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/dehaze-24px.png);
+  height: 24px;
+  width: 24px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
